@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("")
-	fmt.Println(calc.Calc(1, 2))
+	c := calc.NewCalculator()
+	fmt.Println(c.Calc(1, 2))
 }
