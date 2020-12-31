@@ -1,12 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/kotaoue/go-interface/packages/calc"
+)
 
 func main() {
-	fmt.Println(Calc(1, 2))
-}
-
-// Calc is calcurate two numbers.
-func Calc(a, b int) int {
-	return a + b
+	fmt.Println("")
+	fmt.Println(calc.Calc(1, 2))
 }
