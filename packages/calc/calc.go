@@ -7,13 +7,19 @@ type ALU interface {
 
 // Calculator is the struct for execute basic calculate.
 type Calculator struct {
-	alu CalcALU
+	alu CALU
 }
 
-type CalcALU struct{}
-
 // Calc is calculated two numbers.
-func (c *CalcALU) Calc(a, b int) int {
+func (c *Calculator) Calc(a, b int) int {
+	return c.alu.Calc(a, b)
+}
+
+// CALU is ALU for Calculator struct.
+type CALU struct{}
+
+// Calc is add two numbers.
+func (c *CALU) Calc(a, b int) int {
 	return a + b
 }
 
