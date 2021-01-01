@@ -18,7 +18,7 @@ func (c *Calculator) Calc(a, b int) int {
 // CALU is ALU for Calculator struct.
 type CALU struct{}
 
-// Calc is add two numbers.
+// Calc is adds up two numbers.
 func (c *CALU) Calc(a, b int) int {
 	return a + b
 }
