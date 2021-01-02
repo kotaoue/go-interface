@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	c := calc.NewCalculator()
+	c := &calc.Calculator{Processor: &calc.CALU{}}
 	fmt.Println(c.Calc(1, 2))
 }
