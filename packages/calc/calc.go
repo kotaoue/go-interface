@@ -25,5 +25,5 @@ func (c *CALU) Calc(a, b int) int {
 
 // NewCalculator returns a Calculator that calculate inputed numbers.
 func NewCalculator(a ALU) *Calculator {
-	return &Calculator{}
+	return &Calculator{Processor: a}
 }
