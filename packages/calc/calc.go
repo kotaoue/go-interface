@@ -7,7 +7,7 @@ type ALU interface {
 
 // Calculator is the struct for execute basic calculate.
 type Calculator struct {
-	alu CALU
+	alu ALU
 }
 
 // Calc is calculated two numbers.
